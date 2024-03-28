@@ -28,7 +28,7 @@ const UserForm = ({ isOpen, onClose }) => {
     isOpen &&
     <div className="fixed grid w-screen h-screen place-items-center bg-black/90">
       <form onSubmit={handleSubmit} className={`flex flex-col bg-white/20 p-6 rounded-xl w-96 text-white`}>
-        <h1 className={`text-2xl font-semibold text-white mb-5`}>Agregar Usuario</h1>
+        <h1 className={`text-2xl font-semibold text-white text-center mb-5`}>Agregar / Modificar Usuario</h1>
         <label htmlFor="name">Nombre:</label>
         <input type="text" name='name' value={formData.name} onChange={handleChange} />
         <label htmlFor="lastName">Apellido: </label>
