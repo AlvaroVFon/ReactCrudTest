@@ -2,7 +2,7 @@
 
 ## ToDO
 
-- [ ] Add some Title component
+- [ x ] Add some Title component
 - [ ] State management with Redux Toolkit
   - [ ] userForm State (data fetching)
   - [ ] Button State
