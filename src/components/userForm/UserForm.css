@@ -15,7 +15,4 @@ input{
 .btn{
   width: 100px;
 }
-/* Para WebKit (Chrome, Safari, etc.) */
-input:-webkit-autofill {
-  -webkit-box-shadow: 0 0 0px 1000px white inset; /* Este valor de sombra grande debe ser más grande que la sombra por defecto del navegador */
-}
+
