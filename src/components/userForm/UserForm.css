@@ -1,0 +1,21 @@
+label{
+  margin-top: 10px;
+}
+input:focus{
+  background-color: transparent;
+  outline: none;
+}
+input{
+  background-color: transparent;
+  border: none;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.6);
+  width:100%;
+  padding: 5px;
+}
+.btn{
+  width: 100px;
+}
+/* Para WebKit (Chrome, Safari, etc.) */
+input:-webkit-autofill {
+  -webkit-box-shadow: 0 0 0px 1000px white inset; /* Este valor de sombra grande debe ser más grande que la sombra por defecto del navegador */
+}

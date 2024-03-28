@@ -1,5 +1,5 @@
 import { useEffect } from "react"
-import { getUsers } from "./scripts/getUsers"
+import { getUsers } from "../../scripts/getUsers"
 import { useState } from "react"
 import { TableTitles} from "./TableTitles"
 import { TableRow } from "./TableRow"
@@ -19,7 +19,7 @@ const Table = ({className})=>{
     return (
       
         <table className={className}>
-          <TableTitles titles={["#","First Name", "Last Name", "Age"]}/>
+          <TableTitles titles={["#","First Name", "Last Name", "Age","Edit","Delete"]}/>
           <tbody className="p-10">
             {users.map(user => <TableRow user={user} key={user.id}/>)}     
           </tbody>
