@@ -15,7 +15,7 @@ function App() {
     <>
       <div className='grid grid-cols-9'>
         <header className='flex items-center justify-center col-span-9'>
-          <h1 className='text-4xl text-center font-bold p-6'>User Management</h1>
+          <h1 className='text-4xl text-center font-bold p-6'>React + TailwindCSS + Redux Toolkit CRUD</h1>
           <Button text="Create New" type={`create`} className={"absolute -top-5 right-40 text-xl p-3 bg-green-400 text-white rounded-md col-start-7 col-span-2 hover:bg-green-500 mt-12"} handleClick={setIsUserFormOpen} />
         </header>
 
