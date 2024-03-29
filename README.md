@@ -4,7 +4,9 @@
 
 - [x] Add some Title component
 - [ ] State management with Redux Toolkit
-  - [ ] userForm State (data fetching)
+  - [x] userForm State (data fetching)
   - [ ] Button State
+  - [ ] Table state management
+  - [ ] Edit Form state management
 - [ ] Pagination
 - [ ] "Edit" button functionality
