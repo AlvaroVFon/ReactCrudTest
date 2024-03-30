@@ -10,13 +10,10 @@ const initialState = {
 
 export const fetchData = createAsyncThunk(
   'dataFetch/fetchData',
-  async () => {
-    const response = await axios.get('http://reqres.in/api/users?page=2')
-    .catch((error) => {
-      throw Error(error.message)
-    })
-    return response.data
-  }
+ async (page = 1) => {
+  const response = await axios.get(`https://reqres.in/api/users/?page=${page}`);
+  return response.data;
+}
 );
 
 export const dataFetchSlice = createSlice({

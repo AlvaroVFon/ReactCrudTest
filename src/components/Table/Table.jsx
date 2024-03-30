@@ -1,18 +1,10 @@
-import { useEffect } from "react"
-import { useSelector, useDispatch } from "react-redux"
-import { fetchData } from "../../features/dataFetch/dataFetchSlice"
+
 import { TableTitles } from "./TableTitles"
 import { TableRow } from "./TableRow"
 
 
-const Table = ({ className }) => {
+const Table = ({ className, users }) => {
 
-  const dispatch = useDispatch()
-  useEffect(() => {
-    dispatch(fetchData())
-  }, [dispatch])
-  const users = useSelector(state => state.dataFetch.data)
-  console.log(users)
 
   return (
 
