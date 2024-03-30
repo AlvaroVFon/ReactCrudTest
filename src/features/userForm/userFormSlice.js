@@ -8,7 +8,6 @@ const initialState = {
   isOpen: false
 }
 
-
 export const userFormSlice = createSlice({
   name: 'userForm',
   initialState,
@@ -17,8 +16,7 @@ export const userFormSlice = createSlice({
     setLastName: userFormActions.setLastName,
     setAge: userFormActions.setAge,
     setIsOpen: userFormActions.setIsOpen
-  }
-})
+}})
 
 export const { setName, setLastName, setAge, setIsOpen } = userFormSlice.actions
 export default userFormSlice.reducer
